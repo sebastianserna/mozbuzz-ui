@@ -8,7 +8,7 @@ seguimiento de las marcas y productos de Mozilla (Firefox, Thunderbird, Firefox 
 Roadmap
 ----------------------------------
 
- * Etapa 1:
+ * Etapa 1 (Noviembre 2013):
 
 	+ Maquetar diseño en HTML/CSS (estilos básicos).
 	+ Plantilla - layout de la applicación.
