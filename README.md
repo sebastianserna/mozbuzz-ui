@@ -11,7 +11,7 @@ Roadmap
  * Etapa 1 (Noviembre 2013):
 
 	+ Maquetar diseño en HTML/CSS (estilos básicos).
-	+ Plantilla - layout de la applicación.
+	+ Plantilla - layout de la aplicación.
 	+ Plantilla - página de acceso.
 	+ Depurar código generado (CSS/HTML).
 	+ Comenzar integración con Foundation 4 (Grid y otros componentes).
@@ -19,6 +19,6 @@ Roadmap
 	+ Inicio de integración con Django (creación de template).
 	+ Trasladar repositorio a la cuenta de GitHub de Mozilla Hispano.
 
-
+----------------------------------
 
 
