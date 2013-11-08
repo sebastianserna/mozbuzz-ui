@@ -1,0 +1,44 @@
+// DEFAULT HTML TAGS
+
+body {
+	font-family: "Raleway", sans-serif; 
+
+}
+
+h1, h2, h3, h4, h5, h6	{ 
+	font-family: "Open Sans", sans-serif; 
+	line-height: 1.2; 
+	color: $bluemarine;
+	font-weight: normal;
+}
+
+p	{ 
+	font-size: 14px;
+	line-height: 1.1;
+	word-spacing:1px;
+	color: $darkblue-medium;
+}
+a {
+	color: $color-text-link;
+}
+
+small { font-size: 11px; }
+
+blockquote {
+	font-size: 22px;
+	line-height: 1.5; 
+	border-left: 1px solid #292929;
+}
+
+q {
+	font-size: 22px;
+	line-height: 1.5; 
+}
+
+hr {
+	border-color: #292929;
+}
+
+ul, ol {
+	margin-bottom: 0;
+}
