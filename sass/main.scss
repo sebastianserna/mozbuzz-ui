@@ -1,11 +1,12 @@
-
 // Third-party
+@import "compass";
+@import "compass/css3/images";
 @import "vendor/normalize";
 @import "vendor/foundation";
 
 // Modules and Variables
 
 @import "modules/color";
-@import "modules/default"; 
-@import "modules/layout";
+@import "modules/app-layout";
+@import "modules/global";
 

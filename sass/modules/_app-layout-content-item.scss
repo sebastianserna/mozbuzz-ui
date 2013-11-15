@@ -1,0 +1,17 @@
+
+.content-item {
+	width:emCalc(290px);
+	height:emCalc(430px);
+	margin: emCalc(10px) emCalc(10px);
+	float:left;
+	margin-bottom: emCalc(20px);
+	border:solid 1px #fff;
+	-moz-box-shadow: 0 0 2px $shadow-item;
+	-webkit-box-shadow: 0 0 2px $shadow-item;
+	box-shadow: 0 0 2px $shadow-item;
+	@include background(linear-gradient(top, $color-content-item-start, $color-content-item-middle1, $color-content-item-middle2, $color-content-item-end));
+}
+
+.content-item-text {
+	margin: emCalc(25px);
+}

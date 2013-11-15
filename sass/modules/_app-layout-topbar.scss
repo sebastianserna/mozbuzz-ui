@@ -1,0 +1,31 @@
+
+#topbar {
+	width:100%;
+	height: emCalc(50px); 
+	position:fixed; 
+	z-index: 100;
+	@include background(linear-gradient(top, $color-topbar-start, $color-topbar-end));
+
+} 
+
+.topbar-decoline {
+ 	display:block;
+    border-bottom:solid 2px $darkblue-bold;
+    height:5px;
+	@include background(linear-gradient(left, $color-decoline-start, $color-decoline-end));
+
+}
+
+#user-menu {
+	width: emCalc(250px);
+	float: right;
+	color: $lightblue-bold;
+	line-height: emCalc(45px);
+	text-align:right;
+	padding-right:emCalc(20px);
+}
+
+#user-menu img {
+	margin-left:emCalc(15px);
+	border: solid 1px #424a68;
+}
