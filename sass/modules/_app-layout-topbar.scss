@@ -5,15 +5,10 @@
 	position:fixed; 
 	z-index: 100;
 	@include background(linear-gradient(top, $color-topbar-start, $color-topbar-end));
-
 } 
 
-.topbar-decoline {
- 	display:block;
-    border-bottom:solid 2px $darkblue-bold;
-    height:5px;
-	@include background(linear-gradient(left, $color-decoline-start, $color-decoline-end));
-
+#app-logo {
+	width: emCalc(180px);
 }
 
 #user-menu {
@@ -29,3 +24,11 @@
 	margin-left:emCalc(15px);
 	border: solid 1px #424a68;
 }
+
+.topbar-decoline {
+ 	display:block;
+	border-bottom:solid 2px $darkblue-bold;
+	height:5px;
+	@include background(linear-gradient(left, $color-decoline-start, $color-decoline-end));
+}
+

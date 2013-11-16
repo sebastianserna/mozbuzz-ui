@@ -56,7 +56,6 @@
 // ACTIVE
 
 .active {
-
 	@include background(image-url("../img/arrow-active.png") right center no-repeat,
 						linear-gradient(top, $color-nav-active-start, $color-nav-active-end));
 }
