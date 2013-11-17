@@ -1682,6 +1682,7 @@ blockquote p {
   background: #e1ecf9;
 }
 
+/* Topbar Layout */
 #topbar {
   width: 100%;
   height: 3.125em;
@@ -1723,10 +1724,10 @@ blockquote p {
   background: linear-gradient(left, #25aafc 29%, #ae00ff 72%);
 }
 
+/* Navigation Layout */
 #navigation {
   width: 180px;
   height: 700px;
-  /* Arreglar cuanto antes, solo para pruebas */
   background: #242c44;
   position: fixed;
   z-index: 50;
@@ -1756,6 +1757,7 @@ blockquote p {
   background: #2e3651;
 }
 
+/* Icons */
 .icon {
   width: 30px;
   height: 30px;
@@ -1776,6 +1778,7 @@ blockquote p {
   background-position: -60px 0px;
 }
 
+/* Active Item */
 .active {
   background: url('../img/../img/arrow-active.png?1383891996') right center no-repeat, -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(16%, #414e70), color-stop(76%, #293658));
   background: url('../img/../img/arrow-active.png?1383891996') right center no-repeat, -webkit-linear-gradient(top, #414e70 16%, #293658 76%);
@@ -1788,6 +1791,7 @@ blockquote p {
   background: url('../img/../img/arrow-active.png?1383891996') right center no-repeat;
 }
 
+/* Content Layout */
 #content-area {
   margin-left: 11.25em;
   margin-top: 3.125em;
@@ -1804,11 +1808,9 @@ blockquote p {
   box-shadow: #556595 0 0 5px;
 }
 
-.content-header {
-  width: 100%;
+#content-header {
+  width: 58.75em;
   height: 2.8125em;
-  margin-bottom: 0.9375em;
-  padding-left: 0.9375em;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(16%, #ffffff), color-stop(57%, #eff3f4), color-stop(100%, #cddbed));
   background: -webkit-linear-gradient(top, #ffffff 16%, #eff3f4 57%, #cddbed 100%);
   background: -moz-linear-gradient(top, #ffffff 16%, #eff3f4 57%, #cddbed 100%);
@@ -1816,7 +1818,7 @@ blockquote p {
   background: linear-gradient(top, #ffffff 16%, #eff3f4 57%, #cddbed 100%);
 }
 
-.content-header h3 {
+#content-header h3 {
   font-weight: bold;
   color: #242c44;
   font-size: 0.875em;
@@ -1832,6 +1834,12 @@ blockquote p {
   background-position: 0px -30px;
 }
 
+#content-list {
+  width: 58.125em;
+  margin: 0 auto 0 auto;
+}
+
+/* Content Item Layout */
 .content-item {
   width: 18.125em;
   height: 26.875em;
