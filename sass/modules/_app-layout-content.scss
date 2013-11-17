@@ -10,10 +10,7 @@
 	margin: 15px auto;
 	background: $lightblue-regular;
 	overflow:auto;
-
-	-moz-box-shadow: 0 0 5px #556595;
-	-webkit-box-shadow: 0 0 5px #556595;
-	box-shadow: 0 0 5px #556595;
+	@include box-shadow(#556595 0 0 5px);
 }
 
 .content-header {
@@ -21,7 +18,10 @@
 	height: emCalc(45px);
 	margin-bottom: emCalc(15px);
 	padding-left: emCalc(15px);
-	@include background(linear-gradient(top, $color-content-header-start, $color-content-header-middle, $color-content-header-end));
+	@include background(linear-gradient(top, 
+		$color-content-header-start, 
+		$color-content-header-middle, 
+		$color-content-header-end));
 }
 
 .content-header h3 {
