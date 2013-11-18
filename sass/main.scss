@@ -1,10 +1,11 @@
 // Third-party
 @import "compass";
-@import "vendor/normalize";
-@import "vendor/foundation";
+@import "modules/vendor/normalize";
+@import "modules/vendor/foundation-global";
+@import "modules/vendor/foundation-grid";
 
 // Modules and Variables
 
 @import "modules/color";
+@import "modules/default";
 @import "modules/app-layout";
-@import "modules/global";

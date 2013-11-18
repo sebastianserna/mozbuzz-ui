@@ -14,7 +14,10 @@
 
 	#main-menu {
 		line-height:emCalc(65px);
-		border-bottom: solid 1px #424a68;	
+		border-bottom: solid 1px #424a68;
+		list-style: none;
+		padding: 0;
+		margin: 0;
 		}
 
 	#main-menu a {
