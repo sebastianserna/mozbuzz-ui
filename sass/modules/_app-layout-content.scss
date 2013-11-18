@@ -23,11 +23,11 @@
 				$color-content-header-end));
 			}
 
-		#content-header h3 {
+		#content-header h2 {
 			font-weight:bold;
-			color: $darkblue-medium;
 			font-size: emCalc(14px);
 			line-height: emCalc(50px);
+			display: inline;
 			}
 
 		.content-header-icon {
@@ -42,4 +42,5 @@
 		#content-list {
 			width:emCalc(930px);
 			margin: 0 auto 0 auto;
+			padding-top: emCalc(5px);
 			}

@@ -1,26 +1,32 @@
-// DEFAULT HTML TAGS
+// Default HTML elements
+
+*,
+*:before,
+*:after {
+	@include box-sizing(border-box);
+	}
 
 body {
 	font-family: "Raleway", sans-serif; 
-
-}
+	}
 
 h1, h2, h3, h4, h5, h6	{ 
-	font-family: "Open Sans", sans-serif; 
-	line-height: 1.2; 
-	color: $blue;
+	font-family: "Open Sans", sans-serif;
+	color: $darkblue-bold;
 	font-weight: normal;
-}
+	}
 
-p	{ 
-	font-size: 14px;
-	line-height: 1.1;
-	word-spacing:1px;
-	color: $darkblue-medium;
-}
+p { 
+	font-size: 90%;
+	line-height: emCalc(25px);
+	word-spacing: emCalc(1px);
+	color: $darkblue-bold; 
+	}
+
 a {
 	color: $color-text-link;
-}
+	text-decoration: none;
+	}
 
 small { font-size: 11px; }
 
@@ -28,17 +34,168 @@ blockquote {
 	font-size: 22px;
 	line-height: 1.5; 
 	border-left: 1px solid #292929;
-}
+	}
 
 q {
 	font-size: 22px;
 	line-height: 1.5; 
-}
+	}
 
 hr {
-	border-color: #292929;
-}
+	border-color: $lightblue-bold;
+	}
 
 ul, ol {
 
+	}
+
+/*--------------------------- TABLES ------------------------------*/
+
+table {  
+	border: 1px solid #d3dbf1; 
+	border-collapse:collapse;
+	width:100%;
+	margin: 0px auto;
+	text-align: left;
+	} 
+
+table thead { 
+	height:40px; display:none;
+	@include background(linear-gradient(top, 
+		$color-content-header-start, 
+		$color-content-header-middle, 
+		$color-content-header-end));
+	}
+
+table tbody { 
+	height:40px;
+	}
+
+table tfoot { 
+	height:30px; 
+	background:url(../img/bg_thead.png) repeat-x; 
+	}
+
+table caption { 
+	font-size:12px; 
+	margin:8px; 
+	} 
+	
+th {
+	font: bold 11px "Arial", Verdana, Arial, Helvetica, sans-serif;
+	border-right: 1px solid #d3dbf1;
+	border-bottom: 1px solid #d3dbf1;
+	border-top: 1px solid #d3dbf1;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: left;
+	padding: 4px 4px 6px 12px;
+	}
+
+td {
+	border-bottom: 1px solid #d3dbf1;
+	padding: 0px 6px 0px 12px;
+	font-size:13px;
+	}
+
+
+/*--------------------------- FORMS ------------------------------*/
+
+form { }
+
+legend { 
+	font-size:18px; 
+	font-weight:bold; 
+	margin:10px 0px; 
+	color:#01215a; 
+	}
+
+fieldset { 
+	border: 1px solid #fff;
+	}
+
+label { 
+	color:#01215a;
+	}
+
+select { 
+	margin:10px 0px;
+	}
+
+option { }
+
+input[type="text"] { 
+	width:100%;
+	border:2px solid #d3dbf1;
+	height:30px;
+	font-size:1em;
+	padding:3px 5px;
+	margin:10px 5px;
+	color:#62758b;
+	}
+
+input[type="password"] { 
+	width:310px !important;
+	border:2px solid #d3dbf1;
+	height:30px;
+	font-size:1.2em;
+	padding:3px 5px;
+	margin:10px 5px;
+	color:#62758b;
+	}
+
+textarea { 
+	width:100%;
+	border:2px solid #d3dbf1;
+	font-size:1em;
+	padding:5px 5px;
+	margin:0px 5px 10px 5px;
+	margin:10px 5px;
+	color:#62758b;
+	font-family:inherit;
+	}
+
+input:focus, textarea:focus {
+	border:2px solid #bcc5df;
+	}
+
+// FROM FOUNDATION GLOBAL
+// Get rid of gap under images by making them display: inline-block; by default
+img {
+  display: inline-block;
+  vertical-align: middle;
 }
+
+// Global resets for forms
+
+// Make sure textarea takes on height automatically
+textarea { height: auto; min-height: 50px; }
+
+// Make select elements 100% width by default
+select { width: 100%; }
+
+
+
+/*--------------------------- CLASSES ------------------------------*/
+
+.basic-padding {
+	padding: emCalc(30px);
+	}
+
+// FROM FOUNDATION GLOBAL
+
+// Miscellaneous useful HTML classes
+.left         { float: left !important; }
+.right        { float: right !important; }
+.text-left    { text-align: left !important; }
+.text-right   { text-align: right !important; }
+.text-center  { text-align: center !important; }
+.text-justify { text-align: justify !important; }
+.hide         { display: none; }
+
+// Font smoothing
+// Antialiased font smoothing works best for light text on a dark background.
+// Apply to single elements instead of globally to body.
+// Note this only applies to webkit-based desktop browsers on the Mac.
+.antialiased { -webkit-font-smoothing: antialiased; }
+
