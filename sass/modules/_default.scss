@@ -1,4 +1,6 @@
-// Default HTML elements
+/*-----------------------------------------------------------------*/
+/*--------------------- DEFAULT HTML TAGS -------------------------*/
+/*-----------------------------------------------------------------*/
 
 *,
 *:before,
@@ -49,7 +51,7 @@ ul, ol {
 
 	}
 
-/*--------------------------- TABLES ------------------------------*/
+/*------------------- TABLES --------------------*/
 
 table {  
 	border: 1px solid #d3dbf1; 
@@ -72,8 +74,11 @@ table tbody {
 	}
 
 table tfoot { 
-	height:30px; 
-	background:url(../img/bg_thead.png) repeat-x; 
+	height:30px;
+	@include background(linear-gradient(top, 
+		$color-content-header-start, 
+		$color-content-header-middle, 
+		$color-content-header-end));	
 	}
 
 table caption { 
@@ -99,7 +104,7 @@ td {
 	}
 
 
-/*--------------------------- FORMS ------------------------------*/
+/*------------------- FORMS --------------------*/
 
 form { }
 
@@ -175,8 +180,7 @@ textarea { height: auto; min-height: 50px; }
 select { width: 100%; }
 
 
-
-/*--------------------------- CLASSES ------------------------------*/
+/*------------------- CLASSES --------------------*/
 
 .basic-padding {
 	padding: emCalc(30px);

@@ -1,4 +1,3 @@
-/* Navigation Layout */
 
 #navigation {
 	width:180px;
@@ -35,7 +34,7 @@
 		background: $darkblue-regular;
 		}
 
-	/* Icons */
+/*------------------- ICONS --------------------*/
 
 	.icon {
 		width:30px;
@@ -57,7 +56,7 @@
 		background-position:-60px 0px;
 		}
 
-	/* Active Item */
+/*------------------- ACTIVE ITEM --------------------*/
 
 	.active {
 		@include background(image-url("../img/arrow-active.png") right center no-repeat,

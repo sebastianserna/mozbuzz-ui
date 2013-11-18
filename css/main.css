@@ -1,4 +1,6 @@
-/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+/*-----------------------------------------------------------------*/
+/*------------------------ NORMALIZE v2.1.3 -----------------------*/
+/*-----------------------------------------------------------------*/
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
   display: block;
 }
@@ -166,6 +168,9 @@ table {
   border-spacing: 0;
 }
 
+/*-----------------------------------------------------------------*/
+/*--------------------- DEFAULT HTML TAGS -------------------------*/
+/*-----------------------------------------------------------------*/
 *,
 *:before,
 *:after {
@@ -215,7 +220,7 @@ hr {
   border-color: #cfd9ec;
 }
 
-/*--------------------------- TABLES ------------------------------*/
+/*------------------- TABLES --------------------*/
 table {
   border: 1px solid #d3dbf1;
   border-collapse: collapse;
@@ -240,7 +245,11 @@ table tbody {
 
 table tfoot {
   height: 30px;
-  background: url(../img/bg_thead.png) repeat-x;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(16%, #ffffff), color-stop(57%, #eff3f4), color-stop(100%, #cddbed));
+  background: -webkit-linear-gradient(top, #ffffff 16%, #eff3f4 57%, #cddbed 100%);
+  background: -moz-linear-gradient(top, #ffffff 16%, #eff3f4 57%, #cddbed 100%);
+  background: -o-linear-gradient(top, #ffffff 16%, #eff3f4 57%, #cddbed 100%);
+  background: linear-gradient(top, #ffffff 16%, #eff3f4 57%, #cddbed 100%);
 }
 
 table caption {
@@ -265,7 +274,7 @@ td {
   font-size: 13px;
 }
 
-/*--------------------------- FORMS ------------------------------*/
+/*------------------- FORMS --------------------*/
 legend {
   font-size: 18px;
   font-weight: bold;
@@ -334,7 +343,7 @@ select {
   width: 100%;
 }
 
-/*--------------------------- CLASSES ------------------------------*/
+/*------------------- CLASSES --------------------*/
 .basic-padding {
   padding: 1.875em;
 }
@@ -371,6 +380,9 @@ select {
   -webkit-font-smoothing: antialiased;
 }
 
+/*-----------------------------------------------------------------*/
+/*------------------------- MAIN CONTAINER ------------------------*/
+/*-----------------------------------------------------------------*/
 #main-container {
   width: 100%;
   height: 100%;
@@ -378,7 +390,9 @@ select {
   background: #e1ecf9;
 }
 
-/* Topbar Layout */
+/*-----------------------------------------------------------------*/
+/*----------------------------- TOP BAR ---------------------------*/
+/*-----------------------------------------------------------------*/
 #topbar {
   width: 100%;
   height: 3.125em;
@@ -420,7 +434,9 @@ select {
   background: linear-gradient(left, #25aafc 29%, #ae00ff 72%);
 }
 
-/* Navigation Layout */
+/*-----------------------------------------------------------------*/
+/*-------------------------- NAVIGATION ---------------------------*/
+/*-----------------------------------------------------------------*/
 #navigation {
   width: 180px;
   height: 700px;
@@ -456,7 +472,7 @@ select {
   background: #2e3651;
 }
 
-/* Icons */
+/*------------------- ICONS --------------------*/
 .icon {
   width: 30px;
   height: 30px;
@@ -477,7 +493,7 @@ select {
   background-position: -60px 0px;
 }
 
-/* Active Item */
+/*------------------- ACTIVE ITEM --------------------*/
 .active {
   background: url('../img/../img/arrow-active.png?1383891996') right center no-repeat, -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(16%, #414e70), color-stop(76%, #293658));
   background: url('../img/../img/arrow-active.png?1383891996') right center no-repeat, -webkit-linear-gradient(top, #414e70 16%, #293658 76%);
@@ -490,7 +506,9 @@ select {
   background: url('../img/../img/arrow-active.png?1383891996') right center no-repeat;
 }
 
-/* Content Layout */
+/*-----------------------------------------------------------------*/
+/*----------------------------- CONTENT ---------------------------*/
+/*-----------------------------------------------------------------*/
 #content-area {
   margin-left: 11.25em;
   margin-top: 3.125em;
@@ -539,7 +557,7 @@ select {
   padding-top: 0.3125em;
 }
 
-/* Content Item Layout */
+/*------------------- CONTENT ITEM LAYOUT --------------------*/
 .content-item {
   width: 18.125em;
   height: 26.875em;
