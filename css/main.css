@@ -180,20 +180,19 @@ table {
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  color: #2e3651;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans", sans-serif;
-  color: #000c2f;
   font-weight: normal;
+  line-height: 1.25em;
 }
 
 p {
   font-size: 90%;
   line-height: 1.5625em;
   word-spacing: 0.0625em;
-  color: #000c2f;
 }
 
 a {
@@ -202,13 +201,15 @@ a {
 }
 
 small {
-  font-size: 11px;
+  font-size: 65%;
 }
 
 blockquote {
-  font-size: 22px;
   line-height: 1.5;
   border-left: 1px solid #292929;
+  padding-left: 1.25em;
+  font-style: italic;
+  font-size: 90%;
 }
 
 q {
@@ -217,7 +218,13 @@ q {
 }
 
 hr {
-  border-color: #cfd9ec;
+  border: solid 1px #bfcde2;
+  height: 1px;
+}
+
+img {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 /*------------------- TABLES --------------------*/
@@ -229,7 +236,7 @@ table {
   text-align: left;
 }
 
-table thead {
+thead {
   height: 40px;
   display: none;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(16%, #ffffff), color-stop(57%, #eff3f4), color-stop(100%, #cddbed));
@@ -239,11 +246,11 @@ table thead {
   background: linear-gradient(top, #ffffff 16%, #eff3f4 57%, #cddbed 100%);
 }
 
-table tbody {
+tbody {
   height: 40px;
 }
 
-table tfoot {
+tfoot {
   height: 30px;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(16%, #ffffff), color-stop(57%, #eff3f4), color-stop(100%, #cddbed));
   background: -webkit-linear-gradient(top, #ffffff 16%, #eff3f4 57%, #cddbed 100%);
@@ -259,11 +266,9 @@ table caption {
 
 th {
   font: bold 11px "Arial", Verdana, Arial, Helvetica, sans-serif;
-  border-right: 1px solid #d3dbf1;
   border-bottom: 1px solid #d3dbf1;
   border-top: 1px solid #d3dbf1;
   letter-spacing: 2px;
-  text-transform: uppercase;
   text-align: left;
   padding: 4px 4px 6px 12px;
 }
@@ -283,7 +288,7 @@ legend {
 }
 
 fieldset {
-  border: 1px solid #fff;
+  border: 0;
 }
 
 label {
@@ -291,6 +296,7 @@ label {
 }
 
 select {
+  width: 100%;
   margin: 10px 0px;
 }
 
@@ -322,25 +328,12 @@ textarea {
   margin: 0px 5px 10px 5px;
   margin: 10px 5px;
   color: #62758b;
-  font-family: inherit;
-}
-
-input:focus, textarea:focus {
-  border: 2px solid #bcc5df;
-}
-
-img {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-textarea {
   height: auto;
   min-height: 50px;
 }
 
-select {
-  width: 100%;
+input:focus, textarea:focus {
+  border: 2px solid #bcc5df;
 }
 
 /*------------------- CLASSES --------------------*/
@@ -605,7 +598,6 @@ select {
 .content-item-summary p {
   font-size: 75%;
   line-height: 1.375em;
-  color: #2e3651;
 }
 
 .content-item-audience {

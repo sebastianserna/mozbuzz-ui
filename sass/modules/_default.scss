@@ -9,20 +9,19 @@
 	}
 
 body {
-	font-family: "Raleway", sans-serif; 
+	font-family: "Open Sans", sans-serif;
+	color: $darkblue-regular;
 	}
 
 h1, h2, h3, h4, h5, h6	{ 
-	font-family: "Open Sans", sans-serif;
-	color: $darkblue-bold;
 	font-weight: normal;
+	line-height: emCalc(20px);
 	}
 
 p { 
 	font-size: 90%;
 	line-height: emCalc(25px);
 	word-spacing: emCalc(1px);
-	color: $darkblue-bold; 
 	}
 
 a {
@@ -30,12 +29,16 @@ a {
 	text-decoration: none;
 	}
 
-small { font-size: 11px; }
+small { 
+	font-size: 65%;
+	}
 
 blockquote {
-	font-size: 22px;
 	line-height: 1.5; 
 	border-left: 1px solid #292929;
+	padding-left: emCalc(20px);
+	font-style: italic;
+	font-size: 90%;
 	}
 
 q {
@@ -44,11 +47,17 @@ q {
 	}
 
 hr {
-	border-color: $lightblue-bold;
+	border: solid 1px #bfcde2;
+	height: 1px;
 	}
 
 ul, ol {
 
+	}
+
+img {
+	display: inline-block;
+	vertical-align: middle;
 	}
 
 /*------------------- TABLES --------------------*/
@@ -61,7 +70,7 @@ table {
 	text-align: left;
 	} 
 
-table thead { 
+thead { 
 	height:40px; display:none;
 	@include background(linear-gradient(top, 
 		$color-content-header-start, 
@@ -69,11 +78,11 @@ table thead {
 		$color-content-header-end));
 	}
 
-table tbody { 
+tbody { 
 	height:40px;
 	}
 
-table tfoot { 
+tfoot { 
 	height:30px;
 	@include background(linear-gradient(top, 
 		$color-content-header-start, 
@@ -88,11 +97,9 @@ table caption {
 	
 th {
 	font: bold 11px "Arial", Verdana, Arial, Helvetica, sans-serif;
-	border-right: 1px solid #d3dbf1;
 	border-bottom: 1px solid #d3dbf1;
 	border-top: 1px solid #d3dbf1;
 	letter-spacing: 2px;
-	text-transform: uppercase;
 	text-align: left;
 	padding: 4px 4px 6px 12px;
 	}
@@ -116,14 +123,15 @@ legend {
 	}
 
 fieldset { 
-	border: 1px solid #fff;
+	border: 0;
 	}
 
 label { 
 	color:#01215a;
 	}
 
-select { 
+select {
+	width: 100%; 
 	margin:10px 0px;
 	}
 
@@ -157,27 +165,14 @@ textarea {
 	margin:0px 5px 10px 5px;
 	margin:10px 5px;
 	color:#62758b;
-	font-family:inherit;
+	height: auto;
+	min-height: 50px;
+
 	}
 
 input:focus, textarea:focus {
 	border:2px solid #bcc5df;
 	}
-
-// FROM FOUNDATION GLOBAL
-// Get rid of gap under images by making them display: inline-block; by default
-img {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-// Global resets for forms
-
-// Make sure textarea takes on height automatically
-textarea { height: auto; min-height: 50px; }
-
-// Make select elements 100% width by default
-select { width: 100%; }
 
 
 /*------------------- CLASSES --------------------*/
